@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profit</title>
     <link rel="stylesheet" href="css/style.css?v2024717">
+    <link rel="shortcut icon" href="images/Layer 1.png" initial-scale=1.0 type="image/x-icon">
      <!--폰트어썸-->
      <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     
    
 </head>
 
@@ -20,7 +23,7 @@
     
                     <ul class="gnb">
                         <li><a href="sub.html">소개</a></li>
-                        <li><a href="#">대출</a></li>
+                        <li><a href="sub2.html">대출</a></li>
                         <li><a href="#">고객센터</a></li>
                         <li><a href="#">회사소개</a></li>
                     </ul>
@@ -43,7 +46,7 @@
 
             <section id="section_box">
 
-                <section id="section1">
+                <section id="section1" data-aos="zoom-in-down">
                    <div class="centerbox1100">
                         <div class="book_search">
                             <div class="title_box">
@@ -55,21 +58,12 @@
                                 </form>
                                <figure><img src="images/sec1.png" alt=""></figure>
                             </div>
-                           <!--  <div class="profile_box">
-                                <div class="centerbox1100">
-                                    <figure></figure>
-                                    <div class="content">
-                                        <h2>당안리책발전소</h2>
-                                        <span>큐레이션 서점</span>
-                                        <p>작지만 밀도 있는 서가, 차별화된 북토크가 열리는 책방</p>
-                                    </div>
-                                </div>
-    
-                            </div> -->
+                          
                         </div>
                    </div>
                 </section>
-                <section id="section2">
+                <section id="section2" data-aos="fade-down"
+               >
                 <div class="centerbox1100">
                     <h2>투자상품</h2>
                 <a href="sub.html"><strong>더보기+</strong></a>  
@@ -114,7 +108,9 @@
                     </div>
                     
                 </section>
-                <section id="section3">
+                <section id="section3" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
                     <div class="centerbox1100">
                         <div class="textbox">
                             <div class="text">
@@ -147,18 +143,19 @@
                         </div>
                     </div>
                 </section>
-                <section id="section4">
+                <section id="section4" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
 
                     <h2>공시지표</h2>
                     <p>Track key metrics of my work</p>
                    <a href="#"> <strong>더보기+</strong></a> 
                    
                 </section>
-                <section id="section5">
-                    <div class="centerbox1100">
-                    
-
-                            </h2>
+                <section id="section5" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                        <div class="centerbox1100">
                             <div class="content">
                                 <div class="graph_box">
                                     <div class="line_box">
@@ -190,9 +187,10 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    
                 </section>
-                <section id="section6">
+                <section id="section6"  data-aos="fade-down"
+                data-aos-anchor-placement="center-center">
                     <div class="centerbox1100">
                         <div class="box">
                             <h2>연습투자</h2>
@@ -201,7 +199,8 @@
                         </div>
                     </div>
                 </section>
-                <section id="section7">
+                <section id="section7"  data-aos="fade-down"
+                data-aos-anchor-placement="center-center">
                     <div class="centerbox1100">
 
                         <h2>오시는길</h2>
@@ -235,10 +234,11 @@
  
 
    
-    <footer>
+    <footer  data-aos="fade-down"
+    data-aos-anchor-placement="center-center">
        <div class="centerbox1100">
             <ul class="gnb">
-                <li>© 2022 My Portfolio. All Rights Reserved.</li>
+                <li>© 2024 My Portfolio. All Rights Reserved.</li>
                 <li>Terms & Conditions</li>
                 <li>Privacy Policy</li>
             </ul>
@@ -248,6 +248,11 @@
 
     <script src="script/jquery-3.7.1.js"></script>
     <script src="script/action.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
        
 </body>
 </html>

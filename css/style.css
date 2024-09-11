@@ -20,21 +20,27 @@ html {
 
 }
 
-
+/* 헤더 */
 header {
     padding: 22px 20px;
     font-size: 2rem;
+  
+  
 }
-
+header .centerbox1100 {}
 header .centerbox {
     display: flex;
     justify-content: space-between;
+   
+    
+    
 }
 
 header nav {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
+  
 
 }
 
@@ -43,8 +49,10 @@ header .centerbox .gnb {
 
 }
 
-header .centerbox .gnb li {}
+.gnb li:before {content: "";position: absolute;width: 0px; height: 2px;left:0 ;bottom: 0;background: #09B480;bottom: 0;left: 50%;transform: translate(-50%) ;transition: 0.3s;z-index: -1;}
+.gnb li:hover::before{width: 50% ;left: 50%;}
 
+header .centerbox .gnb li {position: relative;}
 header .centerbox .gnb li a {
     font-size: 1, 8rem;
 
@@ -112,6 +120,7 @@ header .search_box button {
 
 header .search_box button i {}
 
+/* index.html */
 #section_box {
     position: relative;
 
@@ -157,11 +166,18 @@ header .search_box button i {}
 
 #section_box #section1 .title_box figure {}
 
+
 #section_box #section1 .title_box img {
     position: absolute;
     top: -30px;
     left: 55%;
     width: 500px
+    ;animation: Ani 2s infinite;
+}
+@keyframes Ani {
+    0% {top:-30px}
+    50% {top:0px}
+    100% {top:-30px}
 }
 
 @media screen and (max-width: 768px; ) {
@@ -643,10 +659,17 @@ footer .gnb li {
 #sub_box {}
 
 #sub_box #section1 {
-    padding-top: 200px;
+    padding-top: 200px; 
+  
+  
+}
+
+#sub_box #section1 .centerbox1100 {
+    
     display: flex;
     justify-content: left;
-    gap: 50px border: 1px solid #000;
+    gap: 50px 
+     
 }
 
 #sub_box #section1 figure img {
@@ -720,3 +743,60 @@ footer .gnb li {
     line-height: 30px;
     color: #909090;
 }
+
+/* 서브페이지2 */
+
+#sub_box2 {}
+#sub_box2  #section1 {margin-top: 100px;background: #F8FEF8 url(../images/loan-bg.png) left bottom no-repeat;padding-bottom:130px;position: relative;}
+
+#sub_box2  #section1 h2 {padding-top:30px; text-align: center;font-size: 32px;margin-bottom: 70px;}
+
+#sub_box2 #section1 ul {display: flex; gap: 50px;justify-content: center;align-content: center;}
+
+#sub_box2 #section1 .centerbox1100 {}
+
+#sub_box2 #section1 ul li {width: 700px;background: #fff;display: flex;flex-direction: column;text-align: center;}
+
+#sub_box2 #section1 ul li img {width:100%;height: 50%;transition: 0.3s;}
+
+#sub_box2 #section1 ul li img:hover {transform:translateY(15%);}
+
+#sub_box2 #section1 ul li strong {font-size: 18px;color: #595959;padding-top: 35px;}
+
+#sub_box2 #section1 ul li p {padding-top: 35px;font-size: 16px;color: #aaaa;}
+
+#sub_box2 #section1 .btn_box {width: 300px;height: 50px;border: 1px solid #0AB481;position: absolute; bottom: 0;left: 45%;text-align: center;font-size: 24px;line-height: 50px;}
+
+#sub_box2 #section1 .btn_box a {color:#0AB481 ;;}
+
+#sub_box2 #section2 {padding-top: 130px;background: #f8f8f8;}
+#sub_box2 #section2 .centerbox1100 {}
+#sub_box2 #section2 h2 {text-align: center;;font-size: 32px;margin-bottom: 70px;}
+#sub_box2 #section2 ul{display: flex; gap: 50px;justify-content: center;align-content: center;}
+#sub_box2 #section2 ul li{width: 500px;background: #fff;display: flex;flex-direction: column;text-align: center;;}
+#sub_box2 #section2 ul li figure {overflow: hidden;}
+#sub_box2 #section2 ul li img{width: 100%;transition: .3s;}
+
+#sub_box2 #section2 ul li img:hover{transform: scale(1.1);}
+#sub_box2 #section2 ul li strong{font-size: 18px;color: #595959;padding-top: 25px;}
+#sub_box2 #section2 ul li p{padding-top: 15px;font-size: 16px;color: #aaaa;}
+
+#sub_box2 #section3 {padding-top: 130px;background: #F8FEF8;}
+
+#sub_box2 #section3 .centerbox1100 {display: flex;flex-direction: column;}
+
+#sub_box2 #section3 h2 {text-align: center;;font-size: 32px;margin-bottom: 70px;}
+
+#sub_box2 #section3 h2 span {color: #0AB481;font-weight: bold;}
+
+#sub_box2 #section3 ul {display: flex; gap: 50px;justify-content: center;align-content: center;flex-grow: 1;}
+#sub_box2 #section3 ul li {width: 200px;;border: 1px solid #d8d8d8;border-radius: 25px;text-align: left;padding-left: 100px;line-height: 1.3;}
+#sub_box2 #section3 ul li:first-child {background: #fff url(../images/ico-process1.svg)  no-repeat;background-size: 40px auto;
+    background-position: 25px 25px;}
+#sub_box2 #section3 ul li:nth-child(2) {background: #fff url(../images/ico-process2.svg)  no-repeat;background-size: 40px auto;
+    background-position: 25px 25px;}
+#sub_box2 #section3 ul li:nth-child(3) {background: #fff url(../images/ico-process3.svg)  no-repeat;background-size: 70px auto;
+    background-position: 15px 15px;}
+#sub_box2 #section3 ul li em {font-style: normal;margin-top: 30px;display: block;color: #0AB481;font-weight: bold;}
+#sub_box2 #section3 ul li h3 {font-size: 18px;padding-top: 15px;}
+#sub_box2 #section3 ul li p {padding-top: 15px;padding-bottom: 30px;font-size: 16px;color: #aaa;}
