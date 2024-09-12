@@ -73,3 +73,21 @@ $('.graph li').mouseover(function () {
     $(this).attr('title', praText)
 })
 
+function bar2() {
+    let scrT = $(window).scrollTop();
+    let prog2 = $('.page_progress2').height();
+    let winH = $(window).height();
+    let docH = $(document).height();
+    let ratio = prog2 / (docH - winH);
+    $('.bar2').height(scrT * ratio);
+}
+
+$(window).scroll(function () {
+
+    bar2()
+})
+
+$(window).resize(function () {
+
+    bar2()
+})
